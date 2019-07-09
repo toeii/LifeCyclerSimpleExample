@@ -5,12 +5,13 @@ import androidx.lifecycle.ProcessLifecycleOwner
 
 class App : Application(){
 
-    private val sampleLifecycleListener by lazy { AppLifecycleListener() }
+    private val appLifecycleListener by lazy { AppLifecycleListener() }
 
     override fun onCreate() {
         super.onCreate()
 
-        ProcessLifecycleOwner.get().lifecycle.addObserver(sampleLifecycleListener)
+        //ProcessLifecycleOwner
+        ProcessLifecycleOwner.get().lifecycle.addObserver(appLifecycleListener)
 
     }
 

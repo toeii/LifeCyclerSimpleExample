@@ -39,5 +39,4 @@ class AppLifecycleListener : LifecycleObserver {
         System.out.println("connectOnDestroy================")
     }
 
-
 }
